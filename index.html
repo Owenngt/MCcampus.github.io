@@ -1,187 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AI Campus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Campus</title>
     <style>
-        .hidden {
-            display: none;
-        }
+        body { font-family: Arial, sans-serif; text-align: center; padding: 2em; }
+        img { max-width: 100%; height: auto; }
+        .buttons a { margin: 0 10px; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; }
     </style>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Minecraft AI campus for CUHK(SZ)">
-  <meta name="keywords" content="Minecraft, AI Campus, Human-Computer Interaction, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> AI Campus</title>
-
-
 </head>
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://milebench.github.io">
-            MileBench
-          </a>
-          <a class="navbar-item" href="https://github.com/FreedomIntelligence/ALLaVA">
-            ALLaVA
-          </a>
-          <a class="navbar-item" href="">
-            TO BE CONTINUED
-          </a>
-        </div>
-      </div>
+    <h1>AI Campus</h1>
+    <h2>AI campus for CUHKSZ in Minecraft</h2>
+    <p>The Chinese University of Hong Kong, Shenzhen</p>
+    <p>Corresponding to: <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a></p>
+    <div class="buttons">
+        <a href="#">arXiv</a>
+        <a href="#">Dataset</a>
+        <a href="#">Code</a>
+        <a href="#">Leaderboard</a>
     </div>
-
-  </div>
-</nav>
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title is-bold">
-            <img src="static/images/favicon.png" style="width:1.5em;vertical-align: middle" alt="Logo"/>
-            <span class="aicampus" style="vertical-align: middle;font-variant: small-caps;">AI Campus</span>
-            </h1>
-          <h2 class="subtitle is-3 publication-subtitle">
-            Minecraft AI campus for CUHKSZ
-          </h2>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/Owenngt">Wentao Ge</a>,</span>
-            <span class="author-block">
-              <a href="">Yuqing Sun</a>,</span>
-            <span class="author-block">
-              <a href="https://g-h-chen.github.io/">Tianyue Zeng</a>,
-            </span>
-            <span class="author-block">
-              <a href="https://sds.cuhk.edu.cn/node/719">Ziyan Wang</a>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.sribd.cn/teacher/28">Piaohong Wang</a>,
-            </span>
-            <span class="author-block">
-              <a href="https://wabyking.github.io/old.html">Benyou Wang<sup>*</sup></a>
-            </span>
-          </div>
-
-          <br>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">The Chinese University of Hong Kong, Shenzhen</span><br>
-          </div>
-
-          <br>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">*Corresponding to:</span>
-            <!-- <span class="author-block"><a href="mailto:bbsngg@outlook.com">bbsngg@outlook.com</a>,</span> -->
-            <span class="author-block"><a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a></span>
-          </div>
-
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <!-- @PAN TODO: change links -->
-                <a href="https://arxiv.org/abs/2404.18532"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/FreedomIntelligence/MileBench"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <!-- <i class="far fa-images"></i> -->
-                      <p style="font-size:18px">🤗</p>
-                      <!-- 🔗 -->
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
-
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/MileBench/MileBench"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-
-              <!-- Leaderboard Link. -->
-              <span class="link-block">
-                <a href="#leaderboard"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon has-text-white">
-                    <i class="fa-solid fa-trophy"></i>
-                      <!-- <p style="font-size:18px">🏆</p> -->
-                  </span>
-                  <span>Leaderboard</span>
-                </a>
-              </span>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<style>
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-  .center.small {
-    width: 65%;
-    height: auto;
-  }
-  .center.tiny {
-    width: 35%;
-    height: auto;
-  }
-
-</style>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-      <!-- <div class="box m-5"> -->
-        <div class="content has-text-centered">
-          <img src="static/images/cover_image.webp" alt="geometric reasoning" width="100%"/>
-          <p>A image generated by DALLE3 using the prompt, "Create the scene: a few llamas in a unique marathon.
-            The track is paved with pictures, books, articles, and video clips.
-            There's a finish line with a 'MileBench Winner!' banner. " with style-control prompt.</p>
-        </div>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
-
+    <img src="path_to_your_image.jpg" alt="MileBench Image">
+</body>
+</html>
